@@ -77,17 +77,19 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <section>
+        <section id="bonus-part" class="container">
             <!-- Bonus Questions Answer -->
-            <!-- 
-            (1). How does JS works?
-            Ans: Every browser has a engine to run JavaScript code. Whenever we run a JavaScript program, a "parser" remains in the engine receives our code. The parser check the JavaScript code for syntactic errors in line by line. If there is no errors in the code, it creates a data structure called AST (Abstract Syntax Tree). When the AST is created by the parser, the JavaScript engine converts the JavaScript code into the machine language (byte code) that machine can understand.Then this converted code is sent to the system for execution.
-
-            (2). Difference between local storage & session storage.
-            Ans: Local storage saves the user data permanently in the browser. The local storage is shared between all windows with the same origin, so if we set the data in one window, the change becomes visible in another one. The data does not expire, it remains after the browser restart.
-            Session storage saves the user data for a specific time in the browser. The session storage exists only within the current browser tab. Another tab with the same page will have a different storage.
-            But both storage provides same methods such as setItem(), getItem(), removeItem() etc.  
-            -->
+            <h2 class="text-center fw-bold pb-3">Frequently asked questions.</h2>
+            <h3 class="fw-bold">(১). জাভাস্ক্রিপ্ট কিভাবে কাজ করে?</h3>
+            <p class="fs-5">
+                <span class="fw-bold">উত্তর:</span> প্রতিটি ব্রাউজারে জাভাস্ক্রিপ্ট কোড চালানোর জন্য একটি ইঞ্জিন আছে। জাভাস্ক্রিপ্ট ইঞ্জিন হল একটি কম্পিউটার প্রোগ্রাম যা জাভাস্ক্রিপ্ট কোডকে রান করে এবং এটিকে কম্পিউটারের বোধগম্য ভাষায় রূপান্তর করে। উদাহরণস্বরূপ, গুগল ক্রোমে রয়েছে "V8 ইঞ্জিন", মজিলা ফায়ারফক্সে রয়েছে "স্পাইডার মাংকি"। যখনই আমরা একটি জাভাস্ক্রিপ্ট প্রোগ্রাম চালাই, তখন ইঞ্জিনে একটি "পার্সার" থাকে যা আমাদের কোডটিকে রিসিভ করে। পার্সার জাভাস্ক্রিপ্ট কোডটিকে লাইন বাই লাইন চেক করে খুঁজে বের করতে চেষ্টা এতে কোন সিনট্যাকটিক ত্রুটি আছে কি না। যদি কোডে কোনো ত্রুটি না থাকে, তাহলে এটি AST (Abstract Syntax Tree) নামে একটি ডেটা স্ট্রাকচার তৈরি করে। যখন পার্সার দ্বারা AST তৈরি করা হয়, তখন JavaScript ইঞ্জিন জাভাস্ক্রিপ্ট কোডটিকে মেশিন ভাষায় (বাইট কোড) রূপান্তর করে যা কম্পিউটার বুঝতে পারে। তারপর এই রূপান্তরিত কোডটি কার্যকর করার জন্য সিস্টেমে পাঠানো হয়।
+            </p>
+            <br>
+            <h3 class="fw-bold">(২) Local storage & Session storage এর মধ্যে পার্থক্য কি?</h3>
+           <p class="fs-5">
+                <span class="fw-bold">উত্তর:</span> Local storage এবং Session storage ওয়েব স্টোরেজ API নামে পরিচিত। এই API গুলি ব্যবহার করে ক্লায়েন্ট সাইডে ডেটা সংরক্ষণ করা যেতে পারে। Local storage ব্রাউজারে ব্যবহারকারীর ডেটা স্থায়ীভাবে সংরক্ষণ করে। এটির কোন মেয়াদ শেষ হওয়ার সময় নেই, Local storage-এ ডেটা বিদ্যমান থাকে যতক্ষণ না ব্যবহারকারী ম্যানুয়ালি এটি মুছে ফেলেন। ব্রাউজার রিস্টার্ট হওয়ার পরেও Local storage-এ ডেটা থেকে যায়। ব্রাউজারের যেকোনো উইন্ডোতে ডেটা সেট করলে Local storage এর ক্ষেত্রে তা সমস্ত উইন্ডোর মধ্যে শেয়ার হয়ে যায়, তাই আমরা যদি একটি উইন্ডোতে ডেটা সেট করি, তখন অন্য একটি উইন্ডোতেও সেটা দৃশ্যমান হয়। Session storage ব্রাউজারে একটি নির্দিষ্ট সময়ের জন্য ব্যবহারকারীর ডেটা সংরক্ষণ করে। Curretn window বন্ধ না হওয়া পর্যন্ত Session storage-এ ডেটা বিদ্যমান থাকে। যদি আমরা Curretn window বন্ধ করি তাহলে আমাদের ডেটা Session storage থেকে স্বয়ংক্রিয়ভাবে মুছে যাবে। Session storage, window থেকে window-তে পরিবর্তিত হয়। একই ওয়েবসাইটের আরেকটি ুউইন্ডতে আলাদা স্টোরেজ থাকে Session storage এর ক্ষেত্রে। কিন্তু উভয় স্টোরেজ একই Methods ব্যবহার করে থাকে। যেমনঃ setItem(), getItem(), removeItem() ইত্যাদি।
+           </p>  
+            
         </section>
         <footer></footer>
 
