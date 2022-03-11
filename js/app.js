@@ -36,6 +36,7 @@ const switchTab = (id) => {
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
         document.getElementById( "bonus-part" ).style.display = "block";
+
     } else if (id === "liked") {
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
@@ -43,6 +44,7 @@ const switchTab = (id) => {
         document.getElementById( "liked" ).textContent = "";
         document.getElementById( "bonus-part" ).style.display = "none";
         displayLikedPosts();
+        
     } else {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
